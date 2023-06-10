@@ -5,10 +5,14 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(6, 45, 58);
 }
 
 .main{
+    max-width: 640px;
     display: flex;
     flex-direction: column;
     justify-content: center;
