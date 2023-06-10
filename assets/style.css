@@ -96,5 +96,12 @@ label{
     width:6.7em;
     border: none;
     border-radius: 10px;
-    
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color:rgb(197, 204, 10);
+}
+#btn:active{
+    background-color:rgb(197, 204, 10);
 }
