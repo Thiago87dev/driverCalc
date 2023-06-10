@@ -66,6 +66,27 @@ label{
     width: 12.2em;
 }
 
+.dia-seguinte{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+
+.label-dia-seg{
+    margin-top: 0.2em;
+}
+
+#dia-seguinte {
+    transform: scale(1.5); /* Aumenta o tamanho do checkbox */
+  }
+  
+  .dia-seguinte input[type="checkbox"] {
+    width: 14px; /* Ajusta a largura do checkbox */
+    height: 14px; /* Ajusta a altura do checkbox */
+  }
+  
+
 #btn{
     background-color: rgb(255, 247, 0);
     color: rgb(0, 0, 0);
