@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(6, 45, 58);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input::placeholder{
+    font-weight: 700;
+    color: black;
+}
+
+.titulo{
+    font-size: 3.5em;
+    color: rgb(255, 247, 0);
+}
+
+.combustivel,
+.kms,
+.horarios,
+.faturamento-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0.5em;
+}
+.hora-inicio,
+.hora-fim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    color: rgb(255, 247, 0);
+    margin-bottom: 0.3em;
+}
+
+#hora-inicio,
+#hora-fim{
+    width: 5.2em;
+}
+
+#combustivel-preco,
+#combustivel-desc,
+#km-por-litro,
+#km-rodado,
+#faturamento,
+#btn{
+    height: 3em;
+    width: 12.2em;
+}
+
+#btn{
+    background-color: rgb(255, 247, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.5em;
+    height: 1.75em;
+    width:6.7em;
+    border: none;
+    border-radius: 10px;
+    
+}
