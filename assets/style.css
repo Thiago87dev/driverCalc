@@ -48,12 +48,14 @@ input::placeholder{
 label{
     color: rgb(255, 247, 0);
     margin-bottom: 0.3em;
+    cursor: pointer;
 }
 
 #hora-inicio,
 #hora-fim{
     width: 7em;
     height: 2.5em;
+    cursor: pointer;
 }
 
 #combustivel-preco,
@@ -87,7 +89,8 @@ label{
   }
   
 
-#btn{
+#btn,
+.novo-calculo-btn{
     background-color: rgb(255, 247, 0);
     color: rgb(0, 0, 0);
     font-weight: 700;
@@ -99,9 +102,56 @@ label{
     cursor: pointer;
 }
 
+.novo-calculo-btn{
+    margin: 0 auto;
+}
+
 #btn:hover{
     background-color:rgb(197, 204, 10);
 }
 #btn:active{
     background-color:rgb(197, 204, 10);
+}
+
+.res{
+    display: none;
+    flex-direction: column;
+}
+
+.resultado1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 3em;
+    background-color:rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 8px;
+}
+.resultado2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    height: 3em;
+    background-color:rgba(0, 0, 0, 0.845);
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.res-texto{
+    color: rgb(255, 255, 255);
+    font-size: 1.40em;
+    font-weight: 700;
+    text-align: center;
+}
+.res-texto2{
+    color: rgb(255, 255, 255);
+    font-size: 1.40em;
+    font-weight: 700;
+    text-align: center;
+}
+
+span{
+    color: rgb(197, 204, 10);
 }
