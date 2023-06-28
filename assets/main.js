@@ -46,11 +46,9 @@ function calcular(){
     }else if(faturamento === 0 ){
         alert('Campo faturamento deve ser preenchido')
     }else{
-        function dividir (n1, n2){
-            return (n1 / n2).toFixed(2)
-        }
+        const dividir = (n1, n2) => (n1 / n2).toFixed(2)
 
-        const subtrair = (n1, n2) => (n1 -n2).toFixed(2)
+        const subtrair = (n1, n2) => (n1 - n2).toFixed(2)
 
         res.style.display = 'flex'
         main.style.display = 'none'
@@ -72,10 +70,8 @@ function calcular(){
         let minutosTrabFim = (Number(horaFim.split(':')[0]) * 60) + Number(horaFim.split(':')[1]) // total de horas e minutos em minutos
         let horasTrabalhadasDecimalFim = minutosTrabFim / 60 //não chamei a função dividir pois nao quero arredondar os decimais
 
-        if (horasTrabalhadasDecimalInicio > horasTrabalhadasDecimalFim){
-            diaSeg.checked = true
-        }
-
+        if (horasTrabalhadasDecimalInicio > horasTrabalhadasDecimalFim) diaSeg.checked = true
+        
         // verificando se ele começou em um dia e finalizou em outro dia
         let qntHoraTrabDecimal
         if(diaSeg.checked){
